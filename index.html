@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="alarm">
+        <button>Set Alarm</button>
+    </div>
+    <div id="alarm-display"> Upcoming Alarm :
+        <pre id="alarm-title"> 00 : 00</pre>
+    </div>
+    
+    <main>
+        <h1><i></i></h1>
+    </main>
+
+    <div class="container">
+        <div id="input-container">
+            <div id="close-btn">
+                <i class="ri-close-line"></i>
+            </div>
+            <h4 id="alarm-heading">Alarm</h4>
+            <div id="input-time">
+                <label for="hour">Select Hours:</label>
+                <select id="hour"></select>
+
+                <label for="minute">Select Minutes:</label>
+                <select id="minute"></select>
+
+                <label for="ampm">AM/PM:</label>
+                <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <div id="done">
+                <button>Done</button>
+            </div>
+        </div>
+    </div>
+    <audio src="./alarm.mp3" controls></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

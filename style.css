@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    background: black;
+    color: #fff;
+
+}
+
+#alarm {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+#alarm>button {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border: 0.5px solid rgb(184, 173, 153);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#alarm>button:hover {
+    border: 1px solid wheat;
+    background-color: rgb(23, 22, 22);
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 170, 255);
+    font-family: cursive
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#input-container {
+    background-color: rgb(16, 14, 14);
+    width: 500px;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgb(41, 40, 40);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.1);
+
+}
+
+#close-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-btn>i {
+    color: rgb(112, 108, 108);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform ease 0.3s;
+}
+
+#close-btn>i:hover {
+    color: red;
+    transform: scale(1.5);
+}
+
+#input-time {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#input-time label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#input-time select {
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 22px;
+    outline: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658c-.566-.636-.106-1.658.753-1.658h9.592c.86 0 1.32 1.022.753 1.658L8.753 11.14a1 1 0 0 1-1.506 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+#alarm-heading {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 10px;
+    color: rgb(184, 59, 59);
+}
+
+#alarm-display {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+    color: lightblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#alarm-title {
+    font-size: 30px;
+    color:rgb(0, 170, 255);
+}
+
+#done {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#done>button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(184, 59, 59);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+audio {
+    display: none;
+}
